@@ -1,0 +1,33 @@
+Name - Yogesh Vaidhya
+Roll No. - 2018eeb1277
+
+Steps:
+1. Unzip the file.
+2. All the file should be in one folder
+3. Code is written in python 3
+
+4. To run the code in cmd or terminal type command:
+   python3 main.py
+
+5. input.txt file contain the information of the topology of the network.
+    For simplicity,
+    node 'a' is numbered as 0
+    node 'b' is numbered as 1
+    node 'c' is numbered as 2
+    node 'd' is numbered as 3
+    node 'e' is numbered as 4
+
+    Input format:
+    5               <-- No. of nodes or routers
+    0 1 16 16 1     <-- Adjacency Matrix for nodes 0 to 4 ie. 'a' to 'e', 16 --> signifies that link is not present and cost is infinite,  
+    1 0 1 16 16                                                           1 --> signifies link is present and cost is 1,
+    16 1 0 1 16                                                           0 --> signifies link is present and cost is 0,
+    16 16 1 0 1
+    1 16 16 1 0
+    1 2             <-- Link which is broken between 1 and 2
+
+6. Also for verifing the answer from cmd or terminal, output.txt file has final code output which I have got.
+
+7. In the output:
+   -1 : in next_hop(in routing table) means: No next hop present
+   16 : in distance(in routing table) means: Unreachable

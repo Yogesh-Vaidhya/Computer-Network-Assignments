@@ -1,0 +1,98 @@
+Routing Table at end of time t = 0
+Routing table of node 0
+{'distance': [0, 1, 16, 16, 1], 'next_hop': [0, 1, -1, -1, 4]}
+Routing table of node 1
+{'distance': [1, 0, 1, 16, 16], 'next_hop': [0, 1, 2, -1, -1]}
+Routing table of node 2
+{'distance': [16, 1, 0, 1, 16], 'next_hop': [-1, 1, 2, 3, -1]}
+Routing table of node 3
+{'distance': [16, 16, 1, 0, 1], 'next_hop': [-1, -1, 2, 3, 4]}
+Routing table of node 4
+{'distance': [1, 16, 16, 1, 0], 'next_hop': [0, -1, -1, 3, 4]}
+
+
+Routing Table at end of time t = 1
+Routing table of node 0
+{'distance': [0, 1, 2, 2, 1], 'next_hop': [0, 1, 1, 4, 4]}
+Routing table of node 1
+{'distance': [1, 0, 1, 2, 2], 'next_hop': [0, 1, 2, 2, 0]}
+Routing table of node 2
+{'distance': [2, 1, 0, 1, 2], 'next_hop': [1, 1, 2, 3, 3]}
+Routing table of node 3
+{'distance': [2, 2, 1, 0, 1], 'next_hop': [4, 2, 2, 3, 4]}
+Routing table of node 4
+{'distance': [1, 2, 2, 1, 0], 'next_hop': [0, 0, 3, 3, 4]}
+
+
+Answer1 : After time t = 1 every node can reach every other node in the network.
+Final Routing Table
+Routing table of node 0
+{'distance': [0, 1, 2, 2, 1], 'next_hop': [0, 1, 1, 4, 4]}
+Routing table of node 1
+{'distance': [1, 0, 1, 2, 2], 'next_hop': [0, 1, 2, 2, 0]}
+Routing table of node 2
+{'distance': [2, 1, 0, 1, 2], 'next_hop': [1, 1, 2, 3, 3]}
+Routing table of node 3
+{'distance': [2, 2, 1, 0, 1], 'next_hop': [4, 2, 2, 3, 4]}
+Routing table of node 4
+{'distance': [1, 2, 2, 1, 0], 'next_hop': [0, 0, 3, 3, 4]}
+
+
+Link B-C breaks at time t = 2
+
+
+Routing Table at end of time t = 3 after link b-c breaks
+Routing table of node 0
+{'distance': [0, 1, 2, 2, 1], 'next_hop': [0, 1, 1, 4, 4]}
+Routing table of node 1
+{'distance': [1, 0, 16, 16, 2], 'next_hop': [0, 1, 1, 1, 0]}
+Routing table of node 2
+{'distance': [16, 16, 0, 1, 2], 'next_hop': [2, 2, 2, 3, 3]}
+Routing table of node 3
+{'distance': [2, 2, 1, 0, 1], 'next_hop': [4, 2, 2, 3, 4]}
+Routing table of node 4
+{'distance': [1, 2, 2, 1, 0], 'next_hop': [0, 0, 3, 3, 4]}
+
+
+Routing Table at end of time t = 4
+Routing table of node 0
+{'distance': [0, 1, 3, 2, 1], 'next_hop': [0, 1, 4, 4, 4]}
+Routing table of node 1
+{'distance': [1, 0, 16, 3, 2], 'next_hop': [0, 1, 1, 0, 0]}
+Routing table of node 2
+{'distance': [3, 16, 0, 1, 2], 'next_hop': [3, 2, 2, 3, 3]}
+Routing table of node 3
+{'distance': [2, 3, 1, 0, 1], 'next_hop': [4, 4, 2, 3, 4]}
+Routing table of node 4
+{'distance': [1, 2, 2, 1, 0], 'next_hop': [0, 0, 3, 3, 4]}
+
+
+Routing Table at end of time t = 5
+Routing table of node 0
+{'distance': [0, 1, 3, 2, 1], 'next_hop': [0, 1, 4, 4, 4]}
+Routing table of node 1
+{'distance': [1, 0, 4, 3, 2], 'next_hop': [0, 1, 0, 0, 0]}
+Routing table of node 2
+{'distance': [3, 4, 0, 1, 2], 'next_hop': [3, 3, 2, 3, 3]}
+Routing table of node 3
+{'distance': [2, 3, 1, 0, 1], 'next_hop': [4, 4, 2, 3, 4]}
+Routing table of node 4
+{'distance': [1, 2, 2, 1, 0], 'next_hop': [0, 0, 3, 3, 4]}
+
+
+Answer2 : After time t = 5 routing tables of all nodes get stabilised.
+Updated routing tables of all nodes after the network stabilises.
+Routing table of node 0
+{'distance': [0, 1, 3, 2, 1], 'next_hop': [0, 1, 4, 4, 4]}
+Routing table of node 1
+{'distance': [1, 0, 4, 3, 2], 'next_hop': [0, 1, 0, 0, 0]}
+Routing table of node 2
+{'distance': [3, 4, 0, 1, 2], 'next_hop': [3, 3, 2, 3, 3]}
+Routing table of node 3
+{'distance': [2, 3, 1, 0, 1], 'next_hop': [4, 4, 2, 3, 4]}
+Routing table of node 4
+{'distance': [1, 2, 2, 1, 0], 'next_hop': [0, 0, 3, 3, 4]}
+
+
+
+Process finished with exit code 0
